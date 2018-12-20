@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Crystals Collector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Custom style.css -->
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1 class="header">Crystals Collector</h1>
+
+    <div class="row">
+      <div class="col-sm-9">
+        <p>You will be given a random number at the start the of game.</p>
+        <p>There are four crystals below. By clicking on a crystal,
+          you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to trandom number,
+          you lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        <p>By clicking reset button, the game will start over and previous wins and losses will be removed.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 num-box">
+        <h1 id="magicNum"></h1>
+      </div>
+      <div class="col-sm-3 num-box result">
+          <p id="winLoseStatus"></p>
+          <p id="wins">Wins:</p>
+          <p id="losses">Losses:</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 crystals">
+        <img class="image btn crystal-btn" id="img1" src="assets/images/crystal1.png">
+        <img class="image btn crystal-btn" id="img2" src="assets/images/crystal2.png">
+        <img class="image btn crystal-btn" id="img3" src="assets/images/crystal3.png">
+        <img class="image btn crystal-btn" id="img4" src="assets/images/crystal4.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 num-box">
+        <p>Your total score is:</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 num-box">
+        <h1 id="score"></h1>
+      </div>
+
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-primary reset-btn" id="reset">Reset</button>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Script -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+/*
+  ========================================
+  Crystals Collector style.css
+  ========================================
+*/
+
+body {
+  background-image: url("../images/bg.jpg");
+  margin-bottom: 20px;
+}
+
+.header {
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.num-box {
+  background: blanchedalmond;
+  border: 1px solid #dddddd;
+  width: 150px;
+  margin: 10px;
+}
+
+.result {
+  background: lightblue;
+}
+
+.crystal-btn {
+  width: 15%;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* .crystal-btn:hover {
+  width: 18%;
+} */
